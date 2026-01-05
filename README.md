@@ -64,6 +64,7 @@ Demo will perform:
 ## 5. Folder structure
 ```
 building-graph-explorer/
+├── .gitignore
 ├── README.md                   # Setup and usage instructions
 ├── requirements.txt            # Python dependencies
 ├── docker-compose.yaml         # ArangoDB container setup
