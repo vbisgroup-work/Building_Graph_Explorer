@@ -27,6 +27,7 @@ def run_demo():
     # 2. Clean existing data
     print("\n[SETUP] Cleaning existing data...")
     deleted = graph_service.delete_all_data()
+    deteted_graph_view = graph_service.drop_grap()
     print(f"✓ Deleted {deleted.get('vertices_deleted', 0)} vertices")
     print(f"✓ Deleted {deleted.get('edges_deleted', 0)} edges")
 

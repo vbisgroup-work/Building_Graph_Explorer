@@ -3,11 +3,11 @@
 ## 1. Requirements
 - Python 3.12.7
 - Docker 28.2.2
-### 1.1 Tạo virtual environment
+### 1.1 Create virtual environment
 ``` bash
 python -m venv venv
 ```
-### 1.2 Kích hoạt venv
+### 1.2 Activate venv
 
 - Windows
 ```bash
@@ -18,54 +18,50 @@ venv\Scripts\activate
 ```bash
 source venv/bin/activate
 ```
-### 1.3 Cài đặt dependencies
+### 1.3 Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 ## 2. Start ArangoDB
-Chạy ArangoDB bằng Docker:
+Run ArangoDB by Docker:
 ```bash
 docker-compose up -d
 ```
 - Web UI: [http://localhost:8529](http://localhost:8529)  
-- Username: `root`  
-- Password: `password`  
 
-Database `bim_graph_db` sẽ được tạo tự động khi chạy demo.
+Database `bim_graph_db` will create when you run demo.
 
-## 3. Chuẩn bị Data
-Dữ liệu JSON có sẵn tại:
-
+## 3. Prepare Data
 ```
 data/building_data.json
 ```
 
-## 4. Chạy Demo
+## 4. Run Demo
 
-Chạy script demo:
+Run script to demo:
 
 ```bash
 python -m examples.demo
 ```
 
-Demo sẽ thực hiện:
-- Query 1: Lấy tất cả các phòng họp (Meeting Rooms) trong tòa nhà.
-- Query 2: Thống kê số lượng các loại phần tử (tầng, phòng, cửa, cửa sổ) và tổng diện tích của một tòa nhà.
-- Query 3: Tìm đường đi từ sảnh chính (Main Lobby) đến phòng họp (Board Room).
-- Query 4: Lấy danh sách các phòng kết nối với sảnh chính thông qua các cửa.
-- Query 5: Lấy tổng số phòng trong tòa nhà.
-- Query 6: Lấy chi tiết thông tin của một cửa cụ thể (dr_001).
-- Query 7: Lấy các phần tử con trực tiếp của một tòa nhà.
-- Query 8: Lấy tất cả các phần tử con (descendants) của một tầng và thống kê theo loại phần tử.
-- Query 9: Lấy tất cả các phần tử cha (ancestors) của một phòng cụ thể.
-- Query 10: Lấy các phòng kết nối với một phòng cụ thể thông qua các cửa.
-- Query 11: Lấy tất cả các cửa và cửa sổ của một phòng.
-- Query 12: Tìm đường đi giữa hai phòng cụ thể.
-- Query 13: Thống kê số lượng phần tử và tổng diện tích của một tòa nhà khác.
-- Query 14: Báo cáo sức chứa phòng theo loại phòng trong một tòa nhà.
-- Query 15: Thống kê metadata của toàn bộ graph, bao gồm tổng số phần tử, số lượng theo loại, và số lượng quan hệ.
+Demo will perform:
+- Query 1: Get all meeting rooms (Meeting Rooms) in the building.
+- Query 2: Statistics on the number of element types (floors, rooms, doors, windows) and total area of ​​a building.
+- Query 3: Find the way from the main lobby (Main Lobby) to the meeting room (Board Room).
+- Query 4: Get a list of rooms connected to the main lobby through doors.
+- Query 5: Get the total number of rooms in the building.
+- Query 6: Get detailed information of a specific door (dr_001).
+- Query 7: Get direct child elements of a building.
+- Query 8: Get all child elements (descendants) of a layer and statistics by element type.
+- Query 9: Get all parent elements (ancestors) of a specific room.
+- Query 10: Get rooms connected to a specific room through doors.
+- Query 11: Get all doors and windows of a room.
+- Query 12: Find the way between two specific rooms.
+- Query 13: Statistics on the number of elements and total area of ​​another building.
+- Query 14: Report room occupancy by room type in a building.
+- Query 15: Metadata statistics of the entire graph, including total number of elements, number by type, and number of relationships.
 
-## 5. Cấu trúc thư mục
+## 5. Folder structure
 ```
 building-graph-explorer/
 ├── README.md                   # Setup and usage instructions

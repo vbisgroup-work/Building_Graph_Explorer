@@ -4,7 +4,7 @@ from typing import List, Any, Set
 from .models import BuildingElement
 
 
-# IDs được phép tham chiếu nhưng không cần tồn tại trong dữ liệu
+# IDs are allowed to be referenced but do not need to exist in the data
 ALLOWED_EXTERNAL_IDS: Set[str] = {"outside", "corridor"}
 
 
