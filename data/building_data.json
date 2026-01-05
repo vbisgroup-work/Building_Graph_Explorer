@@ -1,0 +1,204 @@
+{
+  "project": {
+    "id": "prj_001",
+    "name": "VBIS Office Complex",
+    "type": "Project",
+    "created_at": "2025-01-15T08:00:00Z"
+  },
+  "site": {
+    "id": "site_001",
+    "name": "District 7 Campus",
+    "type": "Site",
+    "parent_id": "prj_001",
+    "properties": {
+      "address": "123 Nguyen Van Linh, District 7, HCMC",
+      "area_sqm": 15000
+    }
+  },
+  "buildings": [
+    {
+      "id": "bld_001",
+      "type": "Building",
+      "name": "Main Office Tower",
+      "parent_id": "site_001",
+      "properties": {
+        "year_built": 2020,
+        "total_floors": 4,
+        "gross_area_sqm": 4800
+      }
+    },
+    {
+      "id": "bld_002",
+      "type": "Building",
+      "name": "Innovation Hub",
+      "parent_id": "site_001",
+      "properties": {
+        "year_built": 2022,
+        "total_floors": 3,
+        "gross_area_sqm": 2400
+      }
+    }
+  ],
+  "floors": [
+    {"id": "flr_001", "type": "Floor", "name": "Ground Floor", "parent_id": "bld_001", "properties": {"level": 0, "elevation_m": 0, "area_sqm": 1200}},
+    {"id": "flr_002", "type": "Floor", "name": "First Floor", "parent_id": "bld_001", "properties": {"level": 1, "elevation_m": 4.5, "area_sqm": 1200}},
+    {"id": "flr_003", "type": "Floor", "name": "Second Floor", "parent_id": "bld_001", "properties": {"level": 2, "elevation_m": 9.0, "area_sqm": 1200}},
+    {"id": "flr_004", "type": "Floor", "name": "Third Floor", "parent_id": "bld_001", "properties": {"level": 3, "elevation_m": 13.5, "area_sqm": 1200}},
+    {"id": "flr_101", "type": "Floor", "name": "Ground Floor", "parent_id": "bld_002", "properties": {"level": 0, "elevation_m": 0, "area_sqm": 800}},
+    {"id": "flr_102", "type": "Floor", "name": "First Floor", "parent_id": "bld_002", "properties": {"level": 1, "elevation_m": 4.0, "area_sqm": 800}},
+    {"id": "flr_103", "type": "Floor", "name": "Second Floor", "parent_id": "bld_002", "properties": {"level": 2, "elevation_m": 8.0, "area_sqm": 800}}
+  ],
+  "rooms": [
+    {"id": "rm_001", "type": "Room", "name": "Main Lobby", "parent_id": "flr_001", "properties": {"room_type": "Lobby", "area_sqm": 150, "capacity": 50}},
+    {"id": "rm_002", "type": "Room", "name": "Reception", "parent_id": "flr_001", "properties": {"room_type": "Reception", "area_sqm": 40, "capacity": 4}},
+    {"id": "rm_003", "type": "Room", "name": "Security Office", "parent_id": "flr_001", "properties": {"room_type": "Office", "area_sqm": 25, "capacity": 3}},
+    {"id": "rm_004", "type": "Room", "name": "Restroom M - G", "parent_id": "flr_001", "properties": {"room_type": "Restroom", "area_sqm": 30, "capacity": 5}},
+    {"id": "rm_005", "type": "Room", "name": "Restroom F - G", "parent_id": "flr_001", "properties": {"room_type": "Restroom", "area_sqm": 30, "capacity": 5}},
+    {"id": "rm_006", "type": "Room", "name": "Elevator Hall - G", "parent_id": "flr_001", "properties": {"room_type": "Circulation", "area_sqm": 20, "capacity": 10}},
+
+    {"id": "rm_010", "type": "Room", "name": "Open Office 1A", "parent_id": "flr_002", "properties": {"room_type": "OpenOffice", "area_sqm": 300, "capacity": 40}},
+    {"id": "rm_011", "type": "Room", "name": "Meeting Room 1A", "parent_id": "flr_002", "properties": {"room_type": "MeetingRoom", "area_sqm": 35, "capacity": 10}},
+    {"id": "rm_012", "type": "Room", "name": "Meeting Room 1B", "parent_id": "flr_002", "properties": {"room_type": "MeetingRoom", "area_sqm": 25, "capacity": 6}},
+    {"id": "rm_013", "type": "Room", "name": "Phone Booth 1A", "parent_id": "flr_002", "properties": {"room_type": "PhoneBooth", "area_sqm": 4, "capacity": 1}},
+    {"id": "rm_014", "type": "Room", "name": "Phone Booth 1B", "parent_id": "flr_002", "properties": {"room_type": "PhoneBooth", "area_sqm": 4, "capacity": 1}},
+    {"id": "rm_015", "type": "Room", "name": "Pantry 1F", "parent_id": "flr_002", "properties": {"room_type": "Pantry", "area_sqm": 40, "capacity": 15}},
+    {"id": "rm_016", "type": "Room", "name": "Restroom M - 1F", "parent_id": "flr_002", "properties": {"room_type": "Restroom", "area_sqm": 25, "capacity": 4}},
+    {"id": "rm_017", "type": "Room", "name": "Restroom F - 1F", "parent_id": "flr_002", "properties": {"room_type": "Restroom", "area_sqm": 25, "capacity": 4}},
+    {"id": "rm_018", "type": "Room", "name": "Elevator Hall - 1F", "parent_id": "flr_002", "properties": {"room_type": "Circulation", "area_sqm": 20, "capacity": 10}},
+
+    {"id": "rm_020", "type": "Room", "name": "Open Office 2A", "parent_id": "flr_003", "properties": {"room_type": "OpenOffice", "area_sqm": 280, "capacity": 35}},
+    {"id": "rm_021", "type": "Room", "name": "Manager Office 2A", "parent_id": "flr_003", "properties": {"room_type": "PrivateOffice", "area_sqm": 20, "capacity": 2}},
+    {"id": "rm_022", "type": "Room", "name": "Manager Office 2B", "parent_id": "flr_003", "properties": {"room_type": "PrivateOffice", "area_sqm": 20, "capacity": 2}},
+    {"id": "rm_023", "type": "Room", "name": "Conference Room 2A", "parent_id": "flr_003", "properties": {"room_type": "ConferenceRoom", "area_sqm": 60, "capacity": 20}},
+    {"id": "rm_024", "type": "Room", "name": "Server Room", "parent_id": "flr_003", "properties": {"room_type": "Technical", "area_sqm": 30, "capacity": 2}},
+    {"id": "rm_025", "type": "Room", "name": "Restroom M - 2F", "parent_id": "flr_003", "properties": {"room_type": "Restroom", "area_sqm": 25, "capacity": 4}},
+    {"id": "rm_026", "type": "Room", "name": "Restroom F - 2F", "parent_id": "flr_003", "properties": {"room_type": "Restroom", "area_sqm": 25, "capacity": 4}},
+    {"id": "rm_027", "type": "Room", "name": "Elevator Hall - 2F", "parent_id": "flr_003", "properties": {"room_type": "Circulation", "area_sqm": 20, "capacity": 10}},
+
+    {"id": "rm_030", "type": "Room", "name": "Executive Office A", "parent_id": "flr_004", "properties": {"room_type": "ExecutiveOffice", "area_sqm": 45, "capacity": 4}},
+    {"id": "rm_031", "type": "Room", "name": "Executive Office B", "parent_id": "flr_004", "properties": {"room_type": "ExecutiveOffice", "area_sqm": 45, "capacity": 4}},
+    {"id": "rm_032", "type": "Room", "name": "Board Room", "parent_id": "flr_004", "properties": {"room_type": "BoardRoom", "area_sqm": 80, "capacity": 24}},
+    {"id": "rm_033", "type": "Room", "name": "Executive Lounge", "parent_id": "flr_004", "properties": {"room_type": "Lounge", "area_sqm": 50, "capacity": 12}},
+    {"id": "rm_034", "type": "Room", "name": "Executive Restroom", "parent_id": "flr_004", "properties": {"room_type": "Restroom", "area_sqm": 20, "capacity": 2}},
+    {"id": "rm_035", "type": "Room", "name": "Elevator Hall - 3F", "parent_id": "flr_004", "properties": {"room_type": "Circulation", "area_sqm": 20, "capacity": 10}},
+
+    {"id": "rm_101", "type": "Room", "name": "Innovation Lobby", "parent_id": "flr_101", "properties": {"room_type": "Lobby", "area_sqm": 80, "capacity": 20}},
+    {"id": "rm_102", "type": "Room", "name": "Collaboration Space G", "parent_id": "flr_101", "properties": {"room_type": "Collaboration", "area_sqm": 120, "capacity": 30}},
+    {"id": "rm_103", "type": "Room", "name": "Workshop Room", "parent_id": "flr_101", "properties": {"room_type": "Workshop", "area_sqm": 80, "capacity": 20}},
+    {"id": "rm_104", "type": "Room", "name": "Restroom - Hub G", "parent_id": "flr_101", "properties": {"room_type": "Restroom", "area_sqm": 25, "capacity": 4}},
+
+    {"id": "rm_110", "type": "Room", "name": "Lab Space 1", "parent_id": "flr_102", "properties": {"room_type": "Lab", "area_sqm": 150, "capacity": 15}},
+    {"id": "rm_111", "type": "Room", "name": "Lab Space 2", "parent_id": "flr_102", "properties": {"room_type": "Lab", "area_sqm": 100, "capacity": 10}},
+    {"id": "rm_112", "type": "Room", "name": "Testing Room", "parent_id": "flr_102", "properties": {"room_type": "Testing", "area_sqm": 40, "capacity": 4}},
+    {"id": "rm_113", "type": "Room", "name": "Equipment Storage", "parent_id": "flr_102", "properties": {"room_type": "Storage", "area_sqm": 30, "capacity": 2}},
+    {"id": "rm_114", "type": "Room", "name": "Restroom - Hub 1F", "parent_id": "flr_102", "properties": {"room_type": "Restroom", "area_sqm": 25, "capacity": 4}},
+
+    {"id": "rm_120", "type": "Room", "name": "Training Room A", "parent_id": "flr_103", "properties": {"room_type": "Training", "area_sqm": 100, "capacity": 30}},
+    {"id": "rm_121", "type": "Room", "name": "Training Room B", "parent_id": "flr_103", "properties": {"room_type": "Training", "area_sqm": 80, "capacity": 24}},
+    {"id": "rm_122", "type": "Room", "name": "Breakout Room 1", "parent_id": "flr_103", "properties": {"room_type": "Breakout", "area_sqm": 25, "capacity": 8}},
+    {"id": "rm_123", "type": "Room", "name": "Breakout Room 2", "parent_id": "flr_103", "properties": {"room_type": "Breakout", "area_sqm": 25, "capacity": 8}},
+    {"id": "rm_124", "type": "Room", "name": "Restroom - Hub 2F", "parent_id": "flr_103", "properties": {"room_type": "Restroom", "area_sqm": 25, "capacity": 4}}
+  ],
+  "doors": [
+    {"id": "dr_001", "type": "Door", "name": "Main Entrance", "parent_id": "rm_001", "properties": {"door_type": "Revolving", "width_mm": 2400, "height_mm": 2800, "material": "Glass"}, "connects": ["rm_001", "outside"]},
+    {"id": "dr_002", "type": "Door", "name": "Side Entrance", "parent_id": "rm_001", "properties": {"door_type": "Double", "width_mm": 1800, "height_mm": 2400, "material": "Glass"}, "connects": ["rm_001", "outside"]},
+    {"id": "dr_003", "type": "Door", "name": "Lobby to Reception", "parent_id": "rm_001", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_001", "rm_002"]},
+    {"id": "dr_004", "type": "Door", "name": "Lobby to Security", "parent_id": "rm_001", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_001", "rm_003"]},
+    {"id": "dr_005", "type": "Door", "name": "Restroom M Door - G", "parent_id": "rm_004", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_001", "rm_004"]},
+    {"id": "dr_006", "type": "Door", "name": "Restroom F Door - G", "parent_id": "rm_005", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_001", "rm_005"]},
+    {"id": "dr_007", "type": "Door", "name": "Elevator Hall Door - G", "parent_id": "rm_006", "properties": {"door_type": "Double", "width_mm": 1600, "height_mm": 2100, "material": "Glass"}, "connects": ["rm_001", "rm_006"]},
+
+    {"id": "dr_010", "type": "Door", "name": "Office Entry 1F", "parent_id": "rm_010", "properties": {"door_type": "Double", "width_mm": 1600, "height_mm": 2100, "material": "Glass"}, "connects": ["rm_018", "rm_010"]},
+    {"id": "dr_011", "type": "Door", "name": "Meeting 1A Door", "parent_id": "rm_011", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Glass"}, "connects": ["rm_010", "rm_011"]},
+    {"id": "dr_012", "type": "Door", "name": "Meeting 1B Door", "parent_id": "rm_012", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Glass"}, "connects": ["rm_010", "rm_012"]},
+    {"id": "dr_013", "type": "Door", "name": "Phone Booth 1A Door", "parent_id": "rm_013", "properties": {"door_type": "Single", "width_mm": 700, "height_mm": 2100, "material": "Glass"}, "connects": ["rm_010", "rm_013"]},
+    {"id": "dr_014", "type": "Door", "name": "Phone Booth 1B Door", "parent_id": "rm_014", "properties": {"door_type": "Single", "width_mm": 700, "height_mm": 2100, "material": "Glass"}, "connects": ["rm_010", "rm_014"]},
+    {"id": "dr_015", "type": "Door", "name": "Pantry Door 1F", "parent_id": "rm_015", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_010", "rm_015"]},
+    {"id": "dr_016", "type": "Door", "name": "Restroom M Door - 1F", "parent_id": "rm_016", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_018", "rm_016"]},
+    {"id": "dr_017", "type": "Door", "name": "Restroom F Door - 1F", "parent_id": "rm_017", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_018", "rm_017"]},
+
+    {"id": "dr_020", "type": "Door", "name": "Office Entry 2F", "parent_id": "rm_020", "properties": {"door_type": "Double", "width_mm": 1600, "height_mm": 2100, "material": "Glass"}, "connects": ["rm_027", "rm_020"]},
+    {"id": "dr_021", "type": "Door", "name": "Manager 2A Door", "parent_id": "rm_021", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_020", "rm_021"]},
+    {"id": "dr_022", "type": "Door", "name": "Manager 2B Door", "parent_id": "rm_022", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_020", "rm_022"]},
+    {"id": "dr_023", "type": "Door", "name": "Conference 2A Door", "parent_id": "rm_023", "properties": {"door_type": "Double", "width_mm": 1400, "height_mm": 2100, "material": "Glass"}, "connects": ["rm_020", "rm_023"]},
+    {"id": "dr_024", "type": "Door", "name": "Server Room Door", "parent_id": "rm_024", "properties": {"door_type": "Security", "width_mm": 900, "height_mm": 2100, "material": "Steel"}, "connects": ["rm_020", "rm_024"]},
+    {"id": "dr_025", "type": "Door", "name": "Restroom M Door - 2F", "parent_id": "rm_025", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_027", "rm_025"]},
+    {"id": "dr_026", "type": "Door", "name": "Restroom F Door - 2F", "parent_id": "rm_026", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_027", "rm_026"]},
+
+    {"id": "dr_030", "type": "Door", "name": "Executive A Door", "parent_id": "rm_030", "properties": {"door_type": "Single", "width_mm": 1000, "height_mm": 2400, "material": "Wood"}, "connects": ["rm_035", "rm_030"]},
+    {"id": "dr_031", "type": "Door", "name": "Executive B Door", "parent_id": "rm_031", "properties": {"door_type": "Single", "width_mm": 1000, "height_mm": 2400, "material": "Wood"}, "connects": ["rm_035", "rm_031"]},
+    {"id": "dr_032", "type": "Door", "name": "Board Room Door", "parent_id": "rm_032", "properties": {"door_type": "Double", "width_mm": 1800, "height_mm": 2400, "material": "Wood"}, "connects": ["rm_035", "rm_032"]},
+    {"id": "dr_033", "type": "Door", "name": "Lounge Door", "parent_id": "rm_033", "properties": {"door_type": "Double", "width_mm": 1400, "height_mm": 2100, "material": "Glass"}, "connects": ["rm_035", "rm_033"]},
+    {"id": "dr_034", "type": "Door", "name": "Exec Restroom Door", "parent_id": "rm_034", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_033", "rm_034"]},
+
+    {"id": "dr_101", "type": "Door", "name": "Hub Main Entrance", "parent_id": "rm_101", "properties": {"door_type": "Sliding", "width_mm": 2000, "height_mm": 2400, "material": "Glass"}, "connects": ["rm_101", "outside"]},
+    {"id": "dr_102", "type": "Door", "name": "Collab Space Door", "parent_id": "rm_102", "properties": {"door_type": "Double", "width_mm": 1600, "height_mm": 2100, "material": "Glass"}, "connects": ["rm_101", "rm_102"]},
+    {"id": "dr_103", "type": "Door", "name": "Workshop Door", "parent_id": "rm_103", "properties": {"door_type": "Double", "width_mm": 1600, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_102", "rm_103"]},
+    {"id": "dr_104", "type": "Door", "name": "Restroom Hub G Door", "parent_id": "rm_104", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_101", "rm_104"]},
+
+    {"id": "dr_110", "type": "Door", "name": "Lab 1 Door", "parent_id": "rm_110", "properties": {"door_type": "Double", "width_mm": 1400, "height_mm": 2100, "material": "Steel"}, "connects": ["rm_110", "corridor"]},
+    {"id": "dr_111", "type": "Door", "name": "Lab 2 Door", "parent_id": "rm_111", "properties": {"door_type": "Double", "width_mm": 1400, "height_mm": 2100, "material": "Steel"}, "connects": ["rm_111", "corridor"]},
+    {"id": "dr_112", "type": "Door", "name": "Testing Room Door", "parent_id": "rm_112", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Steel"}, "connects": ["rm_110", "rm_112"]},
+    {"id": "dr_113", "type": "Door", "name": "Storage Door", "parent_id": "rm_113", "properties": {"door_type": "Single", "width_mm": 1000, "height_mm": 2100, "material": "Steel"}, "connects": ["rm_111", "rm_113"]},
+    {"id": "dr_114", "type": "Door", "name": "Restroom Hub 1F Door", "parent_id": "rm_114", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_114", "corridor"]},
+
+    {"id": "dr_120", "type": "Door", "name": "Training A Door", "parent_id": "rm_120", "properties": {"door_type": "Double", "width_mm": 1600, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_120", "corridor"]},
+    {"id": "dr_121", "type": "Door", "name": "Training B Door", "parent_id": "rm_121", "properties": {"door_type": "Double", "width_mm": 1600, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_121", "corridor"]},
+    {"id": "dr_122", "type": "Door", "name": "Breakout 1 Door", "parent_id": "rm_122", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Glass"}, "connects": ["rm_120", "rm_122"]},
+    {"id": "dr_123", "type": "Door", "name": "Breakout 2 Door", "parent_id": "rm_123", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Glass"}, "connects": ["rm_121", "rm_123"]},
+    {"id": "dr_124", "type": "Door", "name": "Restroom Hub 2F Door", "parent_id": "rm_124", "properties": {"door_type": "Single", "width_mm": 900, "height_mm": 2100, "material": "Wood"}, "connects": ["rm_124", "corridor"]}
+  ],
+  "windows": [
+    {"id": "wn_001", "type": "Window", "name": "Lobby Window 1", "parent_id": "rm_001", "properties": {"window_type": "CurtainWall", "width_mm": 3000, "height_mm": 2800, "material": "Glass"}},
+    {"id": "wn_002", "type": "Window", "name": "Lobby Window 2", "parent_id": "rm_001", "properties": {"window_type": "CurtainWall", "width_mm": 3000, "height_mm": 2800, "material": "Glass"}},
+    {"id": "wn_003", "type": "Window", "name": "Reception Window", "parent_id": "rm_002", "properties": {"window_type": "Fixed", "width_mm": 1500, "height_mm": 1200, "material": "Glass"}},
+
+    {"id": "wn_010", "type": "Window", "name": "Office 1F Window 1", "parent_id": "rm_010", "properties": {"window_type": "CurtainWall", "width_mm": 2500, "height_mm": 2000, "material": "Glass"}},
+    {"id": "wn_011", "type": "Window", "name": "Office 1F Window 2", "parent_id": "rm_010", "properties": {"window_type": "CurtainWall", "width_mm": 2500, "height_mm": 2000, "material": "Glass"}},
+    {"id": "wn_012", "type": "Window", "name": "Office 1F Window 3", "parent_id": "rm_010", "properties": {"window_type": "CurtainWall", "width_mm": 2500, "height_mm": 2000, "material": "Glass"}},
+    {"id": "wn_013", "type": "Window", "name": "Meeting 1A Window", "parent_id": "rm_011", "properties": {"window_type": "Fixed", "width_mm": 1800, "height_mm": 1500, "material": "Glass"}},
+    {"id": "wn_014", "type": "Window", "name": "Pantry Window", "parent_id": "rm_015", "properties": {"window_type": "Casement", "width_mm": 1200, "height_mm": 1000, "material": "Glass"}},
+
+    {"id": "wn_020", "type": "Window", "name": "Office 2F Window 1", "parent_id": "rm_020", "properties": {"window_type": "CurtainWall", "width_mm": 2500, "height_mm": 2000, "material": "Glass"}},
+    {"id": "wn_021", "type": "Window", "name": "Office 2F Window 2", "parent_id": "rm_020", "properties": {"window_type": "CurtainWall", "width_mm": 2500, "height_mm": 2000, "material": "Glass"}},
+    {"id": "wn_022", "type": "Window", "name": "Manager 2A Window", "parent_id": "rm_021", "properties": {"window_type": "Fixed", "width_mm": 1500, "height_mm": 1500, "material": "Glass"}},
+    {"id": "wn_023", "type": "Window", "name": "Manager 2B Window", "parent_id": "rm_022", "properties": {"window_type": "Fixed", "width_mm": 1500, "height_mm": 1500, "material": "Glass"}},
+    {"id": "wn_024", "type": "Window", "name": "Conference 2A Window", "parent_id": "rm_023", "properties": {"window_type": "CurtainWall", "width_mm": 3000, "height_mm": 2000, "material": "Glass"}},
+
+    {"id": "wn_030", "type": "Window", "name": "Executive A Window", "parent_id": "rm_030", "properties": {"window_type": "FloorToCeiling", "width_mm": 2500, "height_mm": 3000, "material": "Glass"}},
+    {"id": "wn_031", "type": "Window", "name": "Executive B Window", "parent_id": "rm_031", "properties": {"window_type": "FloorToCeiling", "width_mm": 2500, "height_mm": 3000, "material": "Glass"}},
+    {"id": "wn_032", "type": "Window", "name": "Board Room Window 1", "parent_id": "rm_032", "properties": {"window_type": "FloorToCeiling", "width_mm": 3000, "height_mm": 3000, "material": "Glass"}},
+    {"id": "wn_033", "type": "Window", "name": "Board Room Window 2", "parent_id": "rm_032", "properties": {"window_type": "FloorToCeiling", "width_mm": 3000, "height_mm": 3000, "material": "Glass"}},
+    {"id": "wn_034", "type": "Window", "name": "Lounge Window", "parent_id": "rm_033", "properties": {"window_type": "FloorToCeiling", "width_mm": 4000, "height_mm": 3000, "material": "Glass"}},
+
+    {"id": "wn_101", "type": "Window", "name": "Hub Lobby Window", "parent_id": "rm_101", "properties": {"window_type": "CurtainWall", "width_mm": 4000, "height_mm": 2400, "material": "Glass"}},
+    {"id": "wn_102", "type": "Window", "name": "Collab Space Window 1", "parent_id": "rm_102", "properties": {"window_type": "Fixed", "width_mm": 2000, "height_mm": 1800, "material": "Glass"}},
+    {"id": "wn_103", "type": "Window", "name": "Collab Space Window 2", "parent_id": "rm_102", "properties": {"window_type": "Fixed", "width_mm": 2000, "height_mm": 1800, "material": "Glass"}},
+    {"id": "wn_104", "type": "Window", "name": "Workshop Window", "parent_id": "rm_103", "properties": {"window_type": "Fixed", "width_mm": 1500, "height_mm": 1200, "material": "Glass"}},
+
+    {"id": "wn_110", "type": "Window", "name": "Lab 1 Window", "parent_id": "rm_110", "properties": {"window_type": "Fixed", "width_mm": 1800, "height_mm": 1200, "material": "Glass"}},
+    {"id": "wn_111", "type": "Window", "name": "Lab 2 Window", "parent_id": "rm_111", "properties": {"window_type": "Fixed", "width_mm": 1500, "height_mm": 1200, "material": "Glass"}},
+
+    {"id": "wn_120", "type": "Window", "name": "Training A Window 1", "parent_id": "rm_120", "properties": {"window_type": "Fixed", "width_mm": 2000, "height_mm": 1500, "material": "Glass"}},
+    {"id": "wn_121", "type": "Window", "name": "Training A Window 2", "parent_id": "rm_120", "properties": {"window_type": "Fixed", "width_mm": 2000, "height_mm": 1500, "material": "Glass"}},
+    {"id": "wn_122", "type": "Window", "name": "Training B Window", "parent_id": "rm_121", "properties": {"window_type": "Fixed", "width_mm": 2500, "height_mm": 1500, "material": "Glass"}}
+  ],
+  "metadata": {
+    "total_elements": 122,
+    "element_counts": {
+      "Project": 1,
+      "Site": 1,
+      "Building": 2,
+      "Floor": 7,
+      "Room": 43,
+      "Door": 41,
+      "Window": 27
+    },
+    "relationships": {
+      "PART_OF": 121,
+      "CONTAINS": 121,
+      "HAS_OPENING": 68,
+      "CONNECTS_TO": 64
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# Data Modeling & Validation
+pydantic>=2.5.0
+
+# Database Driver for ArangoDB
+python-arango>=7.8.0
+
+# Testing
+pytest>=7.4.0
+
+# Environment Variables Management (Optional but recommended) if you use .env files
+python-dotenv>=1.0.0

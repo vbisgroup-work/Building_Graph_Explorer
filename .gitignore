@@ -1,0 +1,16 @@
+# ignore everything
+*
+# except these files
+!.gitignore
+!README.md
+!brief_report.docx
+!requirements.txt
+!docker-compose.yaml
+!data/
+!data/building_data.json
+!examples/
+!examples/*.py
+!src/
+!src/*.py
+!tests/
+!tests/*.py

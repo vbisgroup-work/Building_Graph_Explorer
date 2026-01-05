@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  arangodb:
+    image: arangodb/arangodb:latest
+    container_name: building_graph_db
+    ports:
+      - "8529:8529"   # Mở cổng UI và API cho host
+    environment:
+      - ARANGO_ROOT_PASSWORD=password   # Root password
+    volumes:
+      - ./data/db:/var/lib/arangodb3  # Named volume cho dữ liệu chính
+      - ./data/backups:/backup          # Host folder cho backup
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "arangosh", "--server.endpoint", "tcp://127.0.0.1:8529", "--javascript.execute-string", "print('ok')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+# Named volumes
+volumes:
+  arango_data:
