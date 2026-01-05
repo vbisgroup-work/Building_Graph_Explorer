@@ -66,6 +66,7 @@ Demo sẽ thực hiện:
 - Query 15: Thống kê metadata của toàn bộ graph, bao gồm tổng số phần tử, số lượng theo loại, và số lượng quan hệ.
 
 ## 5. Cấu trúc thư mục
+```
 building-graph-explorer/
 ├── README.md                   # Setup and usage instructions
 ├── requirements.txt            # Python dependencies
@@ -86,3 +87,4 @@ building-graph-explorer/
 │   └── building_data.json      # Mock data file
 └── examples/
     └── demo.py                 # Usage demonstration
+```
